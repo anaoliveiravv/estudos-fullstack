@@ -1,0 +1,13 @@
+#titulo {
+    color: rgb(89, 24, 24);
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+div {
+    font-size: 20px;
+    border: solid;
+    border-color: red blue green rgb(230, 79, 253) ;
+}
