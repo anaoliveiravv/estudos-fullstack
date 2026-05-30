@@ -1,13 +1,62 @@
+/*
+* {
+    box-sizing: border-box;
+    para evitar que os tamanhos definidos saem do que eram pra ser e estraguem o layout
+    margin: 0px;
+}
 #titulo {
     color: rgb(89, 24, 24);
 }
 
 body {
     background-color: blanchedalmond;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/013/743/628/non_2x/cherry-pixel-art-png.png);
+    background-size: 320px;
+    background-position: right;
+    background-repeat: repeat-y;
 }
 
-div {
-    font-size: 20px;
-    border: solid;
-    border-color: red blue green rgb(230, 79, 253) ;
+body div {
+    width: 249px;
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin-left: 10px; 
+}
+
+body nav {
+    width: 249px;
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    padding: 0px;
+    gap: 30px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+nav a {
+    color: black;
+}
+
+h1 {
+    margin: 10px;
+}*/
+
+/*PROJETO ROCKETSEAT*/
+img {
+  border-radius: 16px;
+  width: 752px;
+  height: 400px;
 }
