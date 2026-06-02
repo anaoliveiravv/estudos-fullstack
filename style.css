@@ -55,6 +55,11 @@ h1 {
 }*/
 
 /*PROJETO ROCKETSEAT*/
+:root {
+    font-family: "Alice", serif;
+    line-height: 150%;
+}
+
 img {
   border-radius: 16px;
 }
