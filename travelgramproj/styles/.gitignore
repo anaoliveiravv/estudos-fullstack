@@ -1,0 +1,2 @@
+.DS_Store 
+#isso é so pra mac, pq o mac cria um arquivo desnecessário (o ds store) ent a gnt usa o git ignore pro sistema ignorar ele

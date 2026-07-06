@@ -1,5 +1,5 @@
 /*
-* {
+* { CSS LINHA 90
     box-sizing: border-box;
     para evitar que os tamanhos definidos saem do que eram pra ser e estraguem o layout
     margin: 0px;
@@ -54,5 +54,9 @@ h1 {
     margin: 10px;
 }*/
 
-
+.container { /*LINHA 117*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center /*space-evenly/around/between, flex-end/start*/
+}
 
