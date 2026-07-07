@@ -1,5 +1,21 @@
-* { /*sempre colocar essas coisas no global*/
+* { /*sempre colocar essas coisas no global*/ 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --brand-color: #EF5F4C;
+    --background-color: #FFFFFF;
+    --surface-color: #F5F5F5;
+    --skeleton-color: #D9D9D9;
+    --shape-transparency: #ffffff90; /*para ajustar a transparência, coloca o cursor em cima do topo #ffff e vai clicando escolha oq se sentir melhor e o ultimo valor (normalmente X.tal coisa) indica a transparencia ai por ex vc quer 33%, coloca 0.33)*/
+    --text-color-primary: #313131;
+    --text-color-secondary: #6C6C6C;
+}
+
+body {
+    color: var(--text-color-primary);
+    background-color: var(--background-color);        
+}
+
