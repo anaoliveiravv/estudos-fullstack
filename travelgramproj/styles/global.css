@@ -27,5 +27,20 @@ body {
 
 a {
     text-decoration: none;
-    color: inherit; /*usar a cor da tag pai, nesse caso a do body*/
+    color: inherit; /*cor HERDADA, usa a cor da tag pai, nesse caso a do body*/
+}
+
+a:hover { /*quando o mouse estiver em cima do link*/
+    color: var(--brand-color);
+    text-decoration: underline;
+}
+
+.container {
+    padding-inline: 32px; /*um padding só nas laterais*/
+    max-width: 1280px; /*evita que o conteudo fique muito largo em telas grandes, com zoom maior/menor q 100% por ex*/
+    margin-inline: auto; /*centraliza na horizontal, mas define auto apenas nas laterais, direita e esquerda */
+}
+
+.bg-surface-color {
+    background-color: var(--surface-color);
 }
