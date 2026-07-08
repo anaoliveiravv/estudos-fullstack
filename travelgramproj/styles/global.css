@@ -12,17 +12,17 @@
     --shape-transparency: #ffffff90; /*para ajustar a transparência, coloca o cursor em cima do topo #ffff e vai clicando escolha oq se sentir melhor e o ultimo valor (normalmente X.tal coisa) indica a transparencia ai por ex vc quer 33%, coloca 0.33)*/
     --text-color-primary: #313131;
     --text-color-secondary: #6C6C6C;
-
-    --font-family: "Roboto", sans-serif;
+    --font-family: "Poppins", sans-serif;
     --text-lg: bold 32px/125% var(--font-family); /*text large*/
-    --text: 16px/150% /*ou 1.5*/ var(--font-family) ; 
+    --text: 16px/150% /*ou 1.5*/ var(--font-family); 
     --text-md: 14px/170% var(--font-family); /*text medium*/
     --text-sm: 12px/170% var(--font-family); /*text small*/
 }
 
 body {
-    color: var(--text-color-primary);
-    background-color: var(--background-color);        
+    color: var(--text-color-secondary);
+    background-color: var(--background-color);
+    font: var(--text)        
 }
 
 a {

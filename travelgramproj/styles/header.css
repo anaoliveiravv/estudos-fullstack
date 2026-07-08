@@ -25,6 +25,7 @@ header .container {
 
 #profile p {
     font: var(--text-md);
+    color: var(--text-color-secondary);
 }
 
 #info {
