@@ -1,0 +1,20 @@
+nav {
+    display: flex;
+    justify-content: space-between; /*para dar um espaço entre os elementos do nav*/
+    align-items: center;
+    line-height: 0; /*para remover espaços extras, desnecessários*/
+    padding-block: 20px; /*dá um espaçamento no conteúdo 20px pra cima e 20px pra baixo*/
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li:last-child img {
+    width: 40px;
+    height: 40px;
+    /*caso eu nao use a imagem que está no figma do projeto: 
+    object-fit: cover; e border-radius: 50%*/
+}
