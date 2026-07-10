@@ -54,9 +54,30 @@ h1 {
     margin: 10px;
 }*/
 
-.container { /*LINHA 117*/
+/* .container { LINHA 117 a 132 TESTANDO
     display: flex;
     flex-direction: row;
-    justify-content: center /*space-evenly/around/between, flex-end/start*/
+    justify-content: center (outros tipos: space-evenly/around/between, flex-end/start)
+} */
+
+
+/* GRIDS LINHA 134 HTML
+body {
+    margin: 0;
+}
+#app > div {
+    border: 1px solid red;    
 }
 
+span {
+    border: 1px solid blue;
+}
+
+#app {
+    display: grid; /*transforma os elementos em inblock mesmo que exista um span, ele se transforma em inblock
+    inline-grid
+    grid-template-columns: 1fr 1fr 1fr; fraction, unid de medida, tb pode ser escrito assim -> grid-template-columns: repeat (3, 1fr) 3 colunas cada um contendo 1fr
+    grid-template-rows: repeat(3, 1fr);
+    height: 100vh; viewport height, altura da tela do usuário, entao 100vh é 100% da altura da tela do usuário
+    border: 2px solid green;
+} */
