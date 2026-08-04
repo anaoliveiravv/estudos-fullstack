@@ -1,0 +1,25 @@
+#app {
+    display: grid;
+    grid-template-columns: 51.25% 48.75%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+main {
+    overflow: auto; /*ativou a rolagem quando o texto estiver mt grande na tela e começar a cortar*/
+    padding: 4rem;
+
+    &.main-container {
+        max-width: 33rem;
+        margin-left: auto;
+    }
+}
+
+aside {
+    background-color: var(--surface-secondary);
+    padding: 4rem;
+
+    &.aside-container { /*& significa a tag pai*/
+        max-width: 31rem;
+    }
+}
