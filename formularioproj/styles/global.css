@@ -1,0 +1,14 @@
+:root {
+    --font-family: "Poppins", sans-serif;
+    --text: 400 1rem/1.5 var(--font-family); /*font-weight 400, font-size: 1rem, line-height: 1.5, font-family: Poppins*/
+    --text-sm: 400 0.875rem/1.4 var(--font-family); /*0.875 é 14px (o tamanho da fonte)/ 16px (equivalente a 1rem) que dá 0.875, o rem é usado para se adaptar ao tamanho do texto e espaçamentos de forma proporcional ao site inteiro*/
+    --text-primary: #292524 ;
+    --text-secondary: #57534E;
+    --text-tertiary: #8F8881;
+    --text-highlight: #E43A12;
+    --surface-primary: #FFFFFF;
+    --surface-secondary: #FEE7D6;
+    --stroke-default: #D6D3D1;
+    --stroke-hightlight: #F3541C;
+    --semantic-error: #DC2626;
+}
