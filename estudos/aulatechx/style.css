@@ -1,0 +1,18 @@
+* {
+    margin: 0; /*margem padrao 16px*/
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root { /*so pra variaveis*/
+    --ink: #1D2430;
+    --ink-soft: #5A6472;
+    --paper: #F4F6F2;
+    --card: #FFF;
+    --line: #d8d3c7;
+    --accent: #E8A93A;
+    --accent-dark: #C98925;
+    --done: #5B8266;
+    --danger: #D6572A;
+    --radius: 10px;
+}
