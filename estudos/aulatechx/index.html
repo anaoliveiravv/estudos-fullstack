@@ -5,42 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-do List</title>
     <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div></div>
-    <main>
+    <div class="tape"></div>
+    <main class="card">
       <header>
         <h1>Checklist</h1>
-        <span>2 de 4 feitos</span>
+        <span id="contador">2 de 4 feitos</span>
       </header>
 
-      <form action="">
-        <!-- funcao do javascript -->
-        <input type="text" placeholder="Adicione uma nova tarefa" />
-        <!-- placeholder é a mensagem meio transparente q fica dentro da caixa pra dizer oq o usuario deve inserir-->
-
-        <button type="submit">Adicionar</button>
-        <!--submit pra "enviar" as infos pra algum lugar, entao ele vai recarregar a pagina, "apagando" as informacoes pra resetar e outro usuario usar o formulario-->
+      <p class="status-api">Conectando a api</p>
+      <form id="formulario-tarefa">
+        <input
+          type="text"
+          placeholder="O que você precisa fazer?"
+          id="campo-tarefa"
+        />
+        <button type="submit" id="botao-adicionar">Adicionar</button>
       </form>
-      <ul>
-        <li>
-            <span>✓</span>
-            <span>Configurar o editor de código</span>
-            <button>x</button>
-        </li>
 
-        <li>
-            <span>✓</span>
-            <span>Aprender C# </span>
-            <button>x</button>
-        </li>
-
-        <li>
-            <span>✓</span>
-            <span>Fazer projeto na unity</span>
-            <button>x</button>
-        </li>
+      <ul id="lista-tarefas">
+        <li id="carregando">Carregando tarefas</li>
       </ul>
     </main>
+    <script src="script.js"></script>
+
+    <!-- <form action="">
+        funcao do javascript 
+        <input type="text" placeholder="Adicione uma nova tarefa" />
+         placeholder é a mensagem meio transparente q fica dentro da caixa pra dizer oq o usuario deve inserir-->
+
+    <!-- <button type="submit">Adicionar</button> -->
+    <!--submit pra "enviar" as infos pra algum lugar, entao ele vai recarregar a pagina, "apagando" as informacoes pra resetar e outro usuario usar o formulario-->
+    <!-- </form> -->
   </body>
 </html>

@@ -16,3 +16,29 @@
     --danger: #D6572A;
     --radius: 10px;
 }
+
+body {
+    width: 100%;
+    min-height: 100vh; /*a altura min é a altura da tela que ta sendo visível pro usuario, 1vh = 1% da altura da tela, 50vh = 50% da altura da tela, 100vh = 100% da altura da tela*/
+    background: var(--paper);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--ink);
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 32px 24px;
+    box-shadow: 0 12px 24px -12px rgba(27, 36, 48, 0.18); /*box-shadow: 0 4px 8px black; → horizontal | vertical | desfoque | cor.*/
+}
+
+

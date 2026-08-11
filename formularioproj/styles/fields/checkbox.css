@@ -13,14 +13,14 @@
 .checkbox-wrapper {
   position: relative;
 
-  & [type="checkbox"] {
-    all: unset;
+  & [type="checkbox"] { /*“Pegue qualquer elemento com type="checkbox" que esteja dentro do elemento atual.”*/
+    all: unset; /*Remove praticamente todos os estilos padrão daquele elemento.*/
     position: absolute;
-    inset: 0;
+    inset: 0; /*top: 0; right: 0; bottom: 0; left: 0;*/
   }
 
   .checkbox-image {
-    flex: 0 0 1.5rem;
+    flex: 0 0 1.5rem; /* forma simples de escrever -> flex-grow: 0; flex-shrink: 0; flex-basis: 1.5rem; “Quero que esse item tenha 1.5rem e não aumente nem diminua.”*/
     height: 1.5rem;
 
     background-image: url(../../assets/icons/checkbox-default.svg);

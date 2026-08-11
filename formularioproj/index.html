@@ -35,28 +35,30 @@
             educação infantil Estrelas do Amanhã.
           </p>
           <form method="post" enctype="multipart/form-data">
-            <fieldset class="child-info">
-              <legend>Informações da criança</legend>
+            <!--method="post" = enviar os dados preenchidos no formulário para o servidor.
+            enctype="..." = permite que esse envio inclua ARQUIVOS-->
+            <fieldset class="child-info"> <!--fieldset = tag semantica para agrupar campos-->
+              <legend>Informações da criança</legend> <!--legend = título desse fieldset(grupo de campos)-->
               <div class="input-wrapper">
-                <label for="fullname">Nome Completo</label>
-                <input
+                <label for="fullname">Nome Completo</label> <!--label = título do campo-->
+                <input 
                   id="fullname"
                   name="fullname"
                   type="text"
                   placeholder="Qual o nome da criança"
-                />
+                /> <!-- input = Campo (a caixa)-->
               </div>
               <div class="input-wrapper">
-                <label for="birth">Data de nascimento</label>
+                <label for="birth">Data de nascimento</label> <!--o for nesse caso funciona quando o usuario for clicar no titulo (label) ele ser redirecionado automaticamente para o input -->
                 <input type="date" id="birth" name="birth" lang="pt-BR" />
               </div>
               <div class="select-wrapper">
                 <label for="gender">Sexo</label>
-                <select name="gender" id="gender">
-                  <option value="female">Feminino</option>
+                <select name="gender" id="gender"> <!--name, indica qual é o nome do tipo da informação (como o dado se chama), nesse caso é genero (gender), type é o tipo (como o campo deve funcionar)-->
+                  <option value="female">Feminino</option> <!--value = female vai ser enviado para o backend, e feminino é oq vai aparecer para o meu usuario-->
                   <option value="male">Masculino</option>
                   <option value="na">Prefiro não responder</option>
-                </select>
+                </select> <!--select + option, tags para o usuario poder escolher entre alternativas-->
               </div>
               <div class="textarea-wrapper">
                 <label for="medical-info">Informações médicas</label>
@@ -66,7 +68,7 @@
                   cols="30"
                   rows="5"
                   placeholder="A criança possui alguma condição médica que a escola deve estar ciente? (Se sim, especifique)"
-                ></textarea>
+                ></textarea> <!--textarea = é um campo para o usuário digitar textos maiores, com várias linhas.-->
               </div>
               <div class="droparea-wrapper">
                 <label for="birth-file">Certidão de nascimento</label>
@@ -140,7 +142,7 @@
               <div class="input-wrapper">
                 <label for="gardian">Nome do responsável</label>
                 <input type="text" id="gardian" name="gardian">
-                <small>Principal responsável legal e contato de emergência</small>
+                <small>Principal responsável legal e contato de emergência</small> <!--A tag <small> é usada para representar informações secundárias/complementares ao conteúdo principal, normalmente ficam embaixo do input, da caixa-->
               </div>
 
               <div class="input-wrapper">
@@ -241,7 +243,7 @@
             </div>
 
             <div class="actions-wrapper">
-              <button class="btn-secondary" type="button">Salvar respostas</button>
+              <button class="btn-secondary" type="button">Salvar respostas</button> <!--botão-->
               <button class="btn-primary" type="submit">Fazer matrícula</button>
             </div>
           </form>

@@ -9,7 +9,7 @@ main {
     overflow: auto; /*ativou a rolagem quando o texto estiver mt grande na tela e começar a cortar*/
     padding: 4rem;
 
-    &.main-container {
+    &.main-container { /*& = o elemento atual do nesting css, ent nesse caso seria main.main-container*/
         max-width: 33rem;
         margin-left: auto;
     }

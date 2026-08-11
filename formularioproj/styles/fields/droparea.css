@@ -1,6 +1,6 @@
 .dropzone {
     border: 2px dashed transparent;
-    outline: 1px dashed var(--stroke-default);
+    outline: 1px dashed var(--stroke-default); /*linha que aparece ao redor do elemento*/
     border-radius: .25rem;
     display: grid;
     justify-items: center;
@@ -20,7 +20,8 @@
         color: #a8a29e;
     }
 
-    &:hover, &:has(input:focus) {
+    &:hover, &:has(input:focus) { /*“Quando existir um input focado dentro da .dropzone, estilize a .dropzone.”
+        FOCUS = quando eu clico no input/caixa e aparece a linha do cursor, significa que está em focus*/
         outline-width: 0;
         border-color: var(--stroke-highlight);
         background-color: var(--surface-secondary);
@@ -30,7 +31,7 @@
         }
 
         & svg path {
-            stroke: var(--stroke-highlight);
+            stroke: var(--stroke-highlight); /*“Pegue o <path> que está dentro do <svg> (que está dentro da dropzone) e mude a cor do traço dele.”*/
         }
     }
 }
